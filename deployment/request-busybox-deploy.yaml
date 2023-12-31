@@ -22,18 +22,8 @@ spec:
         args: ["-c", "sleep inf"] 
         resources:
           limits:
-            # cpu: 1000m
-            memory: 2Gi
+              cpu : 2 
+              memory: 4Gi
           requests:
-            cpu: 1
-            memory: 1Gi
-      # affinity:
-      #   podAntiAffinity:
-      #     requiredDuringSchedulingIgnoredDuringExecution:
-      #     - labelSelector:
-      #         matchExpressions:
-      #         - key: app
-      #           operator: In
-      #           values:
-      #           - request-busybox
-      #       topologyKey: "kubernetes.io/hostname"
+              cpu: 1
+              memory: 2Gi
