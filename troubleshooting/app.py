@@ -3,11 +3,11 @@ import os
 
 import aws_cdk as cdk
 
-from part_5_2.part_5_2_stack import Part52Stack
+from troubleshooting.troubleshooting_stack import TroubleshootingStack
 
 
 app = cdk.App()
-Part52Stack(app, "Part52Stack",
+TroubleshootingStack(app, "TroubleshootingStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
     # but a single synthesized template can be deployed anywhere.
