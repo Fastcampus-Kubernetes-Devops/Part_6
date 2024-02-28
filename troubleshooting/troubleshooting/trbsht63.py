@@ -37,9 +37,9 @@ class Trbsht63(Construct):
         node_role.add_managed_policy(iam.ManagedPolicy.from_aws_managed_policy_name("AmazonS3FullAccess"))
         
         # Create Node Group
-        # self._eks.add_nodegroup_capacity("trbsht-nodegroup",
-        #     nodegroup_name="trbsht-nodegroup",
-        #     instance_types=[ec2.InstanceType("t3.large"),ec2.InstanceType("t2.medium")],
-        #     min_size=1,
-        #     node_role=node_role,
-        #     launch_template_spec=eks.LaunchTemplateSpec(id=ngrp_lt.ref, version=ngrp_lt.attr_latest_version_number))
+        self._eks.add_nodegroup_capacity("trbsht-nodegroup",
+            nodegroup_name="trbsht-nodegroup",
+            instance_types=[ec2.InstanceType("t3.large"),ec2.InstanceType("t2.medium")],
+            min_size=1,
+            node_role=node_role,
+            launch_template_spec=eks.LaunchTemplateSpec(id=ngrp_lt.ref, version=ngrp_lt.attr_latest_version_number))
