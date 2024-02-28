@@ -44,7 +44,7 @@ class TroubleshootingStack(Stack):
         #Trbsht63(self,"trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
         
         #6-5
-        #Trbsht65(self, "trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
+        Trbsht65(self, "trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
         
         #7-2
         #Trbsht72(self, "trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
@@ -59,6 +59,4 @@ class TroubleshootingStack(Stack):
         #Trbsht92(self, "trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
         
         #9-4
-        Trbsht94(self, "trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
-        
-        
+        #Trbsht94(self, "trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)

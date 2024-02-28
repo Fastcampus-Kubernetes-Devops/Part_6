@@ -78,7 +78,7 @@ class Trbsht65(Construct):
 
         # Create a node group
         self._eks.add_nodegroup_capacity(
-            "trbsht-nodegroup",
+            "trbsht-nodegroup-65",
             nodegroup_name="trbsht-nodegroup",
             instance_types=[
                 ec2.InstanceType("t3.large"),
