@@ -32,7 +32,7 @@ class TroubleshootingStack(Stack):
         caller_user_for_mapping = iam.User.from_user_arn(self,id=caller_user_id,user_arn=caller_user_arn)
         
         # Create VPC
-        trbsht_vpc = TrbshtVpc(self,"trbsht-vpc")
+        #trbsht_vpc = TrbshtVpc(self,"trbsht-vpc")
         
         #5-2 / 5-3
         #Trbsht52(self,"trbsht-cluster",vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
@@ -47,10 +47,10 @@ class TroubleshootingStack(Stack):
         #Trbsht65(self, "trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
         
         #7-2
-        Trbsht72(self, "trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
+        #Trbsht72(self, "trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
         
         #8-2 Will create the VPC in this contstruct
-        #Trbsht82(self, "trbsht-cluster", caller_user_for_mapping=caller_user_for_mapping)
+        Trbsht82(self, "trbsht-cluster", caller_user_for_mapping=caller_user_for_mapping)
         
         #8-4
         #Trbsht84(self, "trbsht-cluster", vpc=trbsht_vpc.vpc, caller_user_for_mapping=caller_user_for_mapping)
